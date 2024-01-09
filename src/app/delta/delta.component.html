@@ -1,0 +1,9 @@
+<form [formGroup]="deltaForm">
+    <input formControlName="a" type="number" />
+    <input formControlName="b" type="number" />
+    <input formControlName="c" type="number" />
+</form>
+
+
+<pre>{{ deltaForm.value | json }}</pre>
+<p>{{ deltaForm.value.b*deltaForm.value.b-4*deltaForm.value.a*deltaForm.value.c }}</p>
